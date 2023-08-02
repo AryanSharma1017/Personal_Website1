@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Bebas+Neue&family=Inconsolata&family=Oswald:wght@200&family=Ysabeau+Office:ital,wght@1,200&display=swap');
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    /* opacity: 0.75; */
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+#navbar ul li a{
+    text-decoration: none;
+    padding: 20px 40px;
+    color: whitesmoke;
+    display: block;
+    border-radius: 15px;
+    /* border: 2px solid black; */
+}
+
+#navbar ul li a:hover{
+
+    border: 2px solid black;
+    color: black;
+    border-radius: 35px;
+    background-color: white;
+    text-decoration: underline;
+} 
+
+/* 
+
+#image::before{
+    content: "";
+    position: absolute;
+    background: url('deakin2.jpg') no-repeat center center/cover;
+    height: 0%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89; 
+} */
+
+.hover_effect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 1vh; */
+    background-color: #161617;
+}
+
+.image{
+    width: 100vw;
+    /* height:30%; */
+    position: relative;
+    box-shadow: 0px 0px;
+    transition:all 0.7s ease-in-out;
+}
+/* .image:hover{
+    scale: 1.7;
+    box-shadow: 10px 10px 5px whitesmoke;
+
+} */
+
+img{
+    width: 100vw;
+    height: 60vh;
+    display: block;
+    margin: auto;
+    /* border-radius: 12px; */
+}
+
+.main_content{
+    width: 100%;
+    height: 100%;
+    padding-top: 170px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    /* border-radius: 12px; */
+    background:rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition:all 0.4s ease-in;
+    cursor: pointer;
+}
+
+.main_content:hover{
+    opacity: 1;
+    /* scale: 3; */
+}
+
+.main_content p{
+    color: whitesmoke;
+    font-weight: bolder;
+    /* text-decoration: none; */
+    font-size: 20px;
+    /* transition: all 0.8s ease-in; */
+}
+
+
+.main_content h4{
+    color: yellow;
+    font-size:50px;
+    font-family: 'Arvo', serif;;
+}
+
+
+#about_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+    /* z-index: 1; */
+    
+}
+
+
+#about_me .main{
+    width: 70%;
+    height: 95vh;
+    border: 2px solid #161617;
+    border-radius: 12px;
+    background-color: #161617;
+    padding-top:10px;
+
+}
+
+#about_me .main img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 40px;
+  box-shadow: 0px 0px 0px whitesmoke; 
+  transition: all 2s ease-in;
+}
+#about_me .main img:hover{
+  box-shadow: 0 0 5px whitesmoke,0 0 5px whitesmoke,0 0 25px whitesmoke,0 0 50px whitesmoke,0 0 100px whitesmoke,0 0 200px whitesmoke,0 0 400px whitesmoke;
+
+}
+
+
+#about_me .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:100px ;
+}
+
+#about_me .main h3{
+    color: whitesmoke;
+    font-size: 2.4rem;
+    padding: 5px 3px;
+}
+
+#about_me .main p{
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px 30px;
+    width: 70%;
+}
+
+#works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work .work_items{
+
+    color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    padding: 22px 30px;
+    background-color: rgb(19, 19, 19);
+}
+#work .work_items a img{
+    height: 250px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+#work .work_items a img:hover{
+    transform: scale(1.08);
+}
+#work .work_items p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+
+
+#works h3{
+    font-size: 3rem;
+}
+
+#images{
+    display: flex;
+    flex-direction: row;
+    background-color: #161617;
+}
+#image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    flex-wrap: wrap;
+    
+}
+
+
+
+#image img{
+    height: 300px;
+    width: 300px;
+    padding: 100px 24px;
+    filter: grayscale(100%);
+    transition: all 0.4s ease-in;
+}
+
+#image img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.34);
+    z-index:3;
+
+}
+
+
+#Contact_me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+
+#Contact_me h3{
+    font-size: 3rem;
+}
+
+#Contact_me::before{
+    content: "";
+    position: absolute;
+    background-color: #161617;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contact_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    width: 90%;
+    margin: auto;
+
+}
+
+#contact_box form{
+    width: 35%;
+
+}
+
+#contact_box label{
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#contact_box input, #contact_box textarea{
+    color: white;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 24px;
+    border:3px solid black;
+    background-color:#161617;
+    margin-bottom: 20px;
+
+
+}
+
+#contact_box button{
+    border-radius: 20px;
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding-top: 10px 3px;
+    background-color: #161617;
+    box-shadow: 0px 0px 0px whitesmoke; 
+  transition: all 2s ease-in;
+    color: whitesmoke;
+}
+#contact_box button:hover{
+   color: #161617;
+   background-color: whitesmoke;
+   box-shadow: 0 0 5px whitesmoke,0 0 5px whitesmoke,0 0 25px whitesmoke,0 0 50px whitesmoke,0 0 100px whitesmoke,0 0 200px whitesmoke,0 0 400px whitesmoke;
+}
+
